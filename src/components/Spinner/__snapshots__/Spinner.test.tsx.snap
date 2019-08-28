@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner should render 1`] = `
+.container {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.spinner {
+  display: inline-block;
+  vertical-align: text-bottom;
+  border-style: solid;
+  border-radius: 50%;
+  -webkit-animation-name: keyframe_1vzreuq;
+  animation-name: keyframe_1vzreuq;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+<div
+  className="container"
+>
+  <div
+    className="spinner"
+    style={
+      Object {
+        "borderColor": "#333333",
+        "borderRightColor": "transparent",
+        "borderWidth": 4,
+        "height": 25,
+        "width": 25,
+      }
+    }
+  />
+</div>
+`;

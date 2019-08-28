@@ -1,0 +1,112 @@
+{
+  "name": "opya-react-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "pre-commit": [
+    "build",
+    "lint",
+    "prettier:check",
+    "test"
+  ],
+  "scripts": {
+    "start": "yarn storybook",
+    "build": "yarn build:clean && yarn build:assets && yarn build-lib",
+    "build:clean": "rm -rf ./dist && mkdir dist",
+    "build:assets": "cp -R ./src/assets ./dist",
+    "build-lib": "tsc --noEmit false --isolatedModules false --jsx react --module commonjs --strictNullChecks false --declaration true --noUnusedLocals false",
+    "test": "react-scripts test --watchAll=false --env=jsdom --coverage --forceExit --maxWorkers=1 --detectOpenHandles",
+    "test:coverage": "npm test -- --coverage",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009",
+    "build-storybook": "build-storybook",
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "prettier": "prettier --parser typescript --single-quote",
+    "prettier:check": "yarn prettier --list-different \"src/**/*.{ts,tsx}\"",
+    "format": "yarn prettier --write \"src/**/*.{ts,tsx}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devartdesign/devart-react-components.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devartdesign/devart-react-components/issues"
+  },
+  "homepage": "https://github.com/devartdesign/devart-react-components#readme",
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/**/styles.ts",
+      "!src/**/*.d.ts",
+      "!src/setupTests.ts",
+      "!src/**/index.ts",
+      "!src/loadIconLibrary.ts"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "text",
+      "text-summary"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-info": "^5.1.9",
+    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/cli": "^5.1.9",
+    "@storybook/react": "^5.1.9",
+    "@types/classnames": "^2.2.7",
+    "@types/enzyme": "^3.9.4",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^24.0.11",
+    "@types/moment": "^2.13.0",
+    "@types/moment-timezone": "^0.5.12",
+    "@types/react-router-dom": "^4.3.4",
+    "@types/react-test-renderer": "^16.8.2",
+    "@types/storybook__addon-actions": "^3.4.3",
+    "@types/storybook__addon-info": "^4.1.2",
+    "@types/storybook__addon-knobs": "^5.0.3",
+    "@types/storybook__react": "^4.0.2",
+    "aphrodite": "^2.3.1",
+    "babel-loader": "8.0.5",
+    "classnames": "^2.2.6",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest-aphrodite-react": "^2.2.0",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.23",
+    "opya-utils": "git+ssh://git@github.com:opyacare/opya-utils.git",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.18.2",
+    "react-docgen-typescript-loader": "^3.1.0",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.0.1",
+    "react-test-renderer": "^16.8.6",
+    "ts-jest": "^24.0.1",
+    "tslint": "^5.15.0",
+    "tslint-react": "^4.0.0",
+    "typescript": "3.4.5"
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 160,
+    "bracketSpacing": true,
+    "arrowParens": "avoid",
+    "quoteProps": "as-needed",
+    "jsxSingleQuote": false,
+    "jsxBracketSameLine": false,
+    "proseWrap": "preserve"
+  }
+}

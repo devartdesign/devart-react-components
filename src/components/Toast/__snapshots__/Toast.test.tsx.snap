@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toast should render 1`] = `
+.container-success {
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  border-radius: 4px;
+  max-width: 300px;
+  min-width: 300px;
+  background-clip: padding-box;
+  background-color: #3AC6AB;
+}
+
+.header {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 4px 12px;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  line-height: 1.8;
+  text-transform: capitalize;
+  color: #646565;
+  background-color: rgba(255, 255, 255, 0.85);
+  background-clip: padding-box;
+}
+
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0px;
+  padding-left: 10px;
+  border: 0px;
+  background-color: transparent;
+}
+
+.body {
+  padding: 12px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+<div
+  className="container-success"
+>
+  <div
+    className="header"
+  >
+    <strong>
+      title
+    </strong>
+    <button
+      className="button"
+      onClick={[MockFunction]}
+    >
+      <small>
+        x
+      </small>
+    </button>
+  </div>
+  <div
+    className="body"
+  >
+    description
+  </div>
+</div>
+`;

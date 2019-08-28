@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Row Component should render 1`] = `
+.container {
+  -webkit-box-lines: multiple;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+<div
+  className="container"
+  style={Object {}}
+>
+  data
+</div>
+`;
+
+exports[`Row Component should render with extra css classes 1`] = `
+.container {
+  -webkit-box-lines: multiple;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+<div
+  className="container another-css-class"
+  style={Object {}}
+>
+  <p>
+    data
+  </p>
+</div>
+`;

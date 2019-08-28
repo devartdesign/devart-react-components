@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Col Component should render 1`] = `
+.container {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+<div
+  className="container"
+  style={
+    Object {
+      "flex": "0 0 100%",
+      "maxWidth": "100%",
+    }
+  }
+>
+  data
+</div>
+`;
+
+exports[`Col Component should render with extra css classes 1`] = `
+.container {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+<div
+  className="container another-css-class"
+  style={
+    Object {
+      "flex": "0 0 50%",
+      "maxWidth": "50%",
+    }
+  }
+>
+  <p>
+    data
+  </p>
+</div>
+`;
