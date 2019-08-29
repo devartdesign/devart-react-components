@@ -75,14 +75,14 @@
     "@types/storybook__addon-knobs": "^5.0.3",
     "@types/storybook__react": "^4.0.2",
     "aphrodite": "^2.3.1",
-    "babel-loader": "8.0.5",
+    "babel-loader": "8.0.6",
     "classnames": "^2.2.6",
+    "devart-utils": "git+ssh://git@github.com:devartdesign/devart-utils.git",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "jest-aphrodite-react": "^2.2.0",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.23",
-    "opya-utils": "git+ssh://git@github.com:opyacare/opya-utils.git",
     "pre-commit": "^1.2.2",
     "prettier": "^1.18.2",
     "react-docgen-typescript-loader": "^3.1.0",
@@ -108,5 +108,8 @@
     "jsxSingleQuote": false,
     "jsxBracketSameLine": false,
     "proseWrap": "preserve"
+  },
+  "dependencies": {
+    "opya-utils": "git+ssh://git@github.com:devartdesign/devart-utils.git"
   }
 }

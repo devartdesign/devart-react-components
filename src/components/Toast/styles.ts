@@ -1,6 +1,6 @@
 import { StyleSheet } from 'aphrodite/no-important';
-import { hexToRgba } from 'opya-utils/dist/utils';
-import { Color } from 'opya-utils/dist/models/general';
+import { hexToRgba } from 'devart-utils/dist/utils';
+import { Color } from 'devart-utils/dist/models/general';
 
 export default StyleSheet.create({
   container: {

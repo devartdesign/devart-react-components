@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var no_important_1 = require("aphrodite/no-important");
-var utils_1 = require("opya-utils/dist/utils");
-var general_1 = require("opya-utils/dist/models/general");
+var utils_1 = require("devart-utils/dist/utils");
+var general_1 = require("devart-utils/dist/models/general");
 exports.default = no_important_1.StyleSheet.create({
     container: {
         overflow: 'hidden',
