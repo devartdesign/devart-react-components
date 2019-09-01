@@ -110,6 +110,8 @@
     "proseWrap": "preserve"
   },
   "dependencies": {
+    "@material-ui/core": "^4.4.0",
+    "@material-ui/icons": "^4.2.1",
     "opya-utils": "git+ssh://git@github.com:devartdesign/devart-utils.git"
   }
 }

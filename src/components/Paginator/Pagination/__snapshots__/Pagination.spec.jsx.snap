@@ -1,0 +1,346 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pagination /> render handleClick should navigate to page 19 1`] = `
+<div
+  className="pagination__nav"
+>
+  <div
+    className="MuiInputBase-root-21 MuiOutlinedInput-root-8 pageLimiter"
+    onClick={[Function]}
+  >
+    <fieldset
+      aria-hidden={true}
+      className="MuiPrivateNotchedOutline-root-38 MuiOutlinedInput-notchedOutline-15"
+      style={
+        Object {
+          "paddingLeft": 8,
+        }
+      }
+    >
+      <legend
+        className="MuiPrivateNotchedOutline-legend-39"
+        style={
+          Object {
+            "width": 0.01,
+          }
+        }
+      >
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "&#8203;",
+            }
+          }
+        />
+      </legend>
+    </fieldset>
+    <div
+      className="MuiSelect-root-1"
+    >
+      <select
+        className="MuiSelect-select-2 MuiInputBase-input-31 MuiOutlinedInput-input-16"
+        id="outlined-age-native-simple"
+        multiple={false}
+        name="Limit"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        value={2}
+      >
+        <option
+          value={5}
+        >
+          5
+        </option>
+        <option
+          value={10}
+        >
+          10
+        </option>
+        <option
+          value={15}
+        >
+          15
+        </option>
+        <option
+          value={20}
+        >
+          20
+        </option>
+        <option
+          value={25}
+        >
+          25
+        </option>
+      </select>
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-40 MuiSelect-icon-7"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <nav
+    aria-label="nav-pagination"
+    className="nav-pagination"
+  >
+    <ul
+      className="pagination"
+    >
+      <li
+        className="page-item"
+      >
+        <button
+          aria-label="Next"
+          className="page-link"
+          href="#"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="sr-only"
+          >
+            1
+          </span>
+        </button>
+      </li>
+      <li
+        className="page-item"
+      >
+        <button
+          aria-label="Next"
+          className="page-link"
+          href="#"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+          >
+            «
+          </span>
+          <span
+            className="sr-only"
+          >
+            Prev
+          </span>
+        </button>
+      </li>
+      <li
+        className="page-item"
+      >
+        <button
+          aria-label="Next"
+          className="page-link"
+          href="#"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="sr-only"
+          >
+            14
+          </span>
+        </button>
+      </li>
+      <li
+        className="page-item"
+      >
+        <button
+          aria-label="Next"
+          className="page-link"
+          href="#"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="sr-only"
+          >
+            15
+          </span>
+        </button>
+      </li>
+      <li
+        className="page-item"
+      >
+        <button
+          aria-label="Next"
+          className="page-link"
+          href="#"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="sr-only"
+          >
+            16
+          </span>
+        </button>
+      </li>
+      <li
+        className="page-item"
+      >
+        <button
+          aria-label="Next"
+          className="page-link"
+          href="#"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="sr-only"
+          >
+            17
+          </span>
+        </button>
+      </li>
+      <li
+        className="page-item"
+      >
+        <button
+          aria-label="Next"
+          className="page-link"
+          href="#"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="sr-only"
+          >
+            18
+          </span>
+        </button>
+      </li>
+      <li
+        className="page-item active"
+      >
+        <button
+          aria-label="Next"
+          className="page-link"
+          href="#"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="sr-only"
+          >
+            19
+          </span>
+        </button>
+      </li>
+      <li
+        className="page-item"
+      >
+        <button
+          aria-label="Next"
+          className="page-link"
+          href="#"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="sr-only"
+          >
+            20
+          </span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`<Pagination /> render should render .nav-pagination with 20 .page-item in page 1 1`] = `
+<div
+  className="pagination__nav"
+>
+  <div
+    className="MuiInputBase-root-21 MuiOutlinedInput-root-8 pageLimiter"
+    onClick={[Function]}
+  >
+    <fieldset
+      aria-hidden={true}
+      className="MuiPrivateNotchedOutline-root-38 MuiOutlinedInput-notchedOutline-15"
+      style={
+        Object {
+          "paddingLeft": 8,
+        }
+      }
+    >
+      <legend
+        className="MuiPrivateNotchedOutline-legend-39"
+        style={
+          Object {
+            "width": 0.01,
+          }
+        }
+      >
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "&#8203;",
+            }
+          }
+        />
+      </legend>
+    </fieldset>
+    <div
+      className="MuiSelect-root-1"
+    >
+      <select
+        className="MuiSelect-select-2 MuiInputBase-input-31 MuiOutlinedInput-input-16"
+        id="outlined-age-native-simple"
+        multiple={false}
+        name="Limit"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        value={2}
+      >
+        <option
+          value={5}
+        >
+          5
+        </option>
+        <option
+          value={10}
+        >
+          10
+        </option>
+        <option
+          value={15}
+        >
+          15
+        </option>
+        <option
+          value={20}
+        >
+          20
+        </option>
+        <option
+          value={25}
+        >
+          25
+        </option>
+      </select>
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-40 MuiSelect-icon-7"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
