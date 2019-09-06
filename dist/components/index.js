@@ -10,4 +10,6 @@ var Toast_1 = require("./Toast");
 exports.Toast = Toast_1.default;
 var ErrorBoundary_1 = require("./ErrorBoundary");
 exports.ErrorBoundary = ErrorBoundary_1.default;
+var Paginator_1 = require("./Paginator");
+exports.Paginator = Paginator_1.default;
 //# sourceMappingURL=index.js.map

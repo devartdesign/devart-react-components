@@ -1,7 +1,7 @@
 {
-  "name": "opya-react-components",
+  "name": "devart-react-components",
   "version": "1.0.0",
-  "description": "",
+  "description": "devart react components",
   "main": "dist/index.js",
   "pre-commit": [
     "build",
