@@ -17,16 +17,20 @@ var __importStar = (this && this.__importStar) || function (mod) {
     result["default"] = mod;
     return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 var _a;
 var react_1 = __importStar(require("react"));
 var react_router_dom_1 = require("react-router-dom");
+var no_important_1 = require("aphrodite/no-important");
 var types_1 = require("./types");
 var util_1 = require("./util");
-require("./Pagination.scss");
+var styles_1 = __importDefault(require("./styles"));
 var LEFT_PAGE = 'LEFT';
 var RIGHT_PAGE = 'RIGHT';
-var PaginationButtonLink = function (params) { return (react_1.default.createElement("button", { type: "button", className: "page-link", "aria-label": "Next", onClick: params.onClick },
+var PaginationButtonLink = function (params) { return (react_1.default.createElement("button", { type: "button", className: no_important_1.css(styles_1.default.pageItemButton), "aria-label": "Next", onClick: params.onClick },
     !params.hideTick && (react_1.default.createElement("span", { "aria-hidden": "true" }, "\u00AB")),
     react_1.default.createElement("span", null, params.text))); };
 var PaginationNavLink = function (params) { return (react_1.default.createElement(react_router_dom_1.NavLink, { to: "/page/" + params.page },
@@ -111,23 +115,23 @@ var Pagination = function (_a) {
     }, [setState, totalRecords, calculatedPages, state]); // eslint-disable-line
     return (react_1.default.createElement(react_1.default.Fragment, null,
         children,
-        react_1.default.createElement("div", { className: "pagination__nav" },
-            !hidePaginationLimiter && (react_1.default.createElement("select", { className: "pageLimiter", value: state.pageLimit, onChange: setPageLimit },
+        react_1.default.createElement("div", { className: no_important_1.css(styles_1.default.paginationNav) },
+            !hidePaginationLimiter && (react_1.default.createElement("select", { className: no_important_1.css(styles_1.default.pageLimiter), value: state.pageLimit, onChange: setPageLimit },
                 react_1.default.createElement("option", { value: 1 }, "1"),
                 react_1.default.createElement("option", { value: 5 }, "5"),
                 react_1.default.createElement("option", { value: 10 }, "10"),
                 react_1.default.createElement("option", { value: 15 }, "15"),
                 react_1.default.createElement("option", { value: 20 }, "20"),
                 react_1.default.createElement("option", { value: 25 }, "25"))),
-            (totalRecords > 0 && calculatedPages.totalPages > 1) && (react_1.default.createElement("nav", { className: "nav-pagination", "aria-label": "nav-pagination" },
-                react_1.default.createElement("ul", { className: "pagination" }, paginationPages.map(function (page, index) {
+            (totalRecords > 0 && calculatedPages.totalPages > 1) && (react_1.default.createElement("nav", { className: no_important_1.css(styles_1.default.navPagination), "aria-label": "nav-pagination" },
+                react_1.default.createElement("ul", { className: no_important_1.css(styles_1.default.pagination) }, paginationPages.map(function (page, index) {
                     if (page === LEFT_PAGE) {
-                        return (react_1.default.createElement("li", { key: index, className: "page-item" }, typeMap[linkType]({ text: 'Prev', onClick: handleMoveLeft, page: page })));
+                        return (react_1.default.createElement("li", { key: index, className: no_important_1.css(styles_1.default.pageItem) }, typeMap[linkType]({ text: 'Prev', onClick: handleMoveLeft, page: page })));
                     }
                     if (page === RIGHT_PAGE) {
-                        return (react_1.default.createElement("li", { key: index, className: "page-item" }, typeMap[linkType]({ text: 'Prev', onClick: handleMoveRight, page: page })));
+                        return (react_1.default.createElement("li", { key: index, className: no_important_1.css(styles_1.default.pageItem) }, typeMap[linkType]({ text: 'Prev', onClick: handleMoveRight, page: page })));
                     }
-                    return (react_1.default.createElement("li", { key: index, className: "page-item" + (state.currentPage === page ? ' active' : '') }, typeMap[linkType]({ page: page, text: page, onClick: handleClick(page), hideTick: true })));
+                    return (react_1.default.createElement("li", { key: index, className: state.currentPage === page ? "" + no_important_1.css(styles_1.default.pageItemActive) : no_important_1.css(styles_1.default.pageItem) + "}" }, typeMap[linkType]({ page: page, text: page, onClick: handleClick(page), hideTick: true })));
                 })))))));
 };
 exports.default = react_1.memo(Pagination);

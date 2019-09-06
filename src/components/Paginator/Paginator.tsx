@@ -1,16 +1,17 @@
 import React, { memo, useMemo, useCallback, useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import { css } from 'aphrodite/no-important';
 
 import { LinkType, IPaginatorQuery } from './types';
 import { createPaginationRange } from './util';
 
-import './Pagination.scss';
+import styles from './styles';
 
 const LEFT_PAGE = 'LEFT';
 const RIGHT_PAGE = 'RIGHT';
 
 const PaginationButtonLink = params => (
-  <button type="button" className="page-link" aria-label="Next" onClick={params.onClick}>
+  <button type="button" className={css(styles.pageItemButton)} aria-label="Next" onClick={params.onClick}>
     {!params.hideTick && (<span aria-hidden="true">&laquo;</span>)}
     <span>{params.text}</span>
   </button>
@@ -141,10 +142,10 @@ const Pagination = ({
   return (
     <>
       {children}
-      <div className="pagination__nav">
+      <div className={css(styles.paginationNav)}>
         {!hidePaginationLimiter && (
           <select
-            className="pageLimiter"
+            className={css(styles.pageLimiter)}
             value={state.pageLimit}
             onChange={setPageLimit}
           >
@@ -157,12 +158,12 @@ const Pagination = ({
           </select>
         )}
         {(totalRecords > 0 && calculatedPages.totalPages > 1) && (
-          <nav className="nav-pagination" aria-label="nav-pagination">
-            <ul className="pagination">
+          <nav className={css(styles.navPagination)} aria-label="nav-pagination">
+            <ul className={css(styles.pagination)}>
               {paginationPages.map((page, index) => {
                 if (page === LEFT_PAGE) {
                   return (
-                    <li key={index} className="page-item">
+                    <li key={index} className={css(styles.pageItem)}>
                       {typeMap[linkType]({ text: 'Prev', onClick: handleMoveLeft, page })}
                     </li>
                   );
@@ -170,14 +171,14 @@ const Pagination = ({
 
                 if (page === RIGHT_PAGE) {
                   return (
-                    <li key={index} className="page-item">
+                    <li key={index} className={css(styles.pageItem)}>
                       {typeMap[linkType]({ text: 'Prev', onClick: handleMoveRight, page })}
                     </li>
                   );
                 }
 
                 return (
-                  <li key={index} className={`page-item${state.currentPage === page ? ' active' : ''}`}>
+                  <li key={index} className={state.currentPage === page ? `${css(styles.pageItemActive)}` : `${css(styles.pageItem)}}`}>
                     {typeMap[linkType]({ page, text: page, onClick: handleClick(page), hideTick: true })}
                   </li>
                 );

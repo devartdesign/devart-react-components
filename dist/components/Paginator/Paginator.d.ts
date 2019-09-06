@@ -1,6 +1,5 @@
 import React from 'react';
 import { LinkType, IPaginatorQuery } from './types';
-import './Pagination.scss';
 export interface IPaginationState {
     currentPage: number;
     lastPage: number;
