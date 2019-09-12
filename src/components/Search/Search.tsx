@@ -15,9 +15,7 @@ const Search = ({ onSearch }: ISearchProps) => {
     setState(event.target.value);
   }, []);
 
-  useEffect(() => {
-    if (state.length > 0) onSearch(state);
-  }, [onSearch, state]);
+  useEffect(() => { onSearch(state); }, [onSearch, state]);
   return (
     <div className={css(styles.search)}>
       <div className={css(styles.searchIcon)}>
@@ -29,6 +27,7 @@ const Search = ({ onSearch }: ISearchProps) => {
         placeholder="Search…"
         value={state}
         onChange={handleChange}
+        className={css(styles.input)}
       />
     </div>
   );

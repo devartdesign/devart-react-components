@@ -21,14 +21,11 @@ var Search = function (_a) {
         event.preventDefault();
         setState(event.target.value);
     }, []);
-    react_1.useEffect(function () {
-        if (state.length > 0)
-            onSearch(state);
-    }, [onSearch, state]);
+    react_1.useEffect(function () { onSearch(state); }, [onSearch, state]);
     return (react_1.default.createElement("div", { className: no_important_1.css(styles_1.default.search) },
         react_1.default.createElement("div", { className: no_important_1.css(styles_1.default.searchIcon) },
             react_1.default.createElement(icons_1.SearchIcon, null)),
-        react_1.default.createElement("input", { type: "text", name: "search", placeholder: "Search\u2026", value: state, onChange: handleChange })));
+        react_1.default.createElement("input", { type: "text", name: "search", placeholder: "Search\u2026", value: state, onChange: handleChange, className: no_important_1.css(styles_1.default.input) })));
 };
 exports.default = react_1.memo(Search);
 //# sourceMappingURL=Search.js.map

@@ -2,7 +2,6 @@ declare const _default: {
     search: object;
     searchIcon: object;
     icon: object;
-    inputRoot: object;
-    inputInput: object;
+    input: object;
 };
 export default _default;

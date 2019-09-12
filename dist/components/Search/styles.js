@@ -25,11 +25,8 @@ exports.default = no_important_1.StyleSheet.create({
     icon: {
         background: '../../assets/icons/search.svg'
     },
-    inputRoot: {
+    input: {
         color: 'inherit',
-        width: '100%',
-    },
-    inputInput: {
         paddingTop: 3,
         paddingRight: 3,
         paddingBottom: 3,
