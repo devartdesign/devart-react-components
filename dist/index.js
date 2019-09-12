@@ -4,4 +4,5 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./components"));
+__export(require("./icons"));
 //# sourceMappingURL=index.js.map
