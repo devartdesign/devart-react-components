@@ -5,8 +5,6 @@ exports.default = no_important_1.StyleSheet.create({
     container: {
         display: 'flex',
         flexWrap: 'wrap',
-        marginRight: -15,
-        marginLeft: -15,
         boxSizing: 'border-box'
     }
 });
