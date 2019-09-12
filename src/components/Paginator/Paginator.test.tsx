@@ -68,7 +68,7 @@ describe('Paginator Component', () => {
     describe('handleMoveLeft', () => {
       beforeAll(() => {
         defaultProps.onPageChanged.mockReset();
-        wrapper.instance().handleMoveLeft({ preventDefault: () => {} });
+        wrapper.instance().handleMoveLeft({ preventDefault: () => { /** */ } });
       });
 
       it('should call onPageChanged callback from Props', () => {

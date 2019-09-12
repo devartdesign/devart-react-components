@@ -6,4 +6,5 @@ export enum LinkType {
 export interface IPaginatorQuery {
   page: number;
   limit: number;
+  sort?: { by: string, direction: 'asc' | 'desc' };
 }
