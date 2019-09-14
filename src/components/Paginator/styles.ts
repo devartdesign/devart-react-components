@@ -48,13 +48,17 @@ export default StyleSheet.create({
       color: '#FFF',
     }
   },
-  pageItemActive: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignContent: 'center',
-    width: 40,
-    height: 25,
+  pageItemButtonActive: {
+    cursor: 'pointer',
+    border: 'none',
     backgroundColor: '#29434e',
     color: '#FFF',
-  }
+    width: '100%',
+    height: '100%',
+    padding: '0',
+    ':hover': {
+      backgroundColor: '#fff',
+      color: '#29434e',
+    },
+  },
 });

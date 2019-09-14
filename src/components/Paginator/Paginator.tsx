@@ -10,16 +10,29 @@ import styles from './styles';
 const LEFT_PAGE = 'LEFT';
 const RIGHT_PAGE = 'RIGHT';
 
-const PaginationButtonLink = params => (
-  <button type="button" className={css(styles.pageItemButton)} aria-label="Next" onClick={params.onClick}>
-    {!params.hideTick && (<span aria-hidden="true">&laquo;</span>)}
-    <span>{params.text}</span>
+interface IPaginationButton {
+  isActive?: boolean;
+  hideTick?: boolean;
+  text: string;
+  page?: number;
+  onClick?: (evt: any) => void;
+}
+
+const PaginationButtonLink = ({ isActive, onClick, hideTick, text }: IPaginationButton) => (
+  <button
+    type="button"
+    className={css(isActive ? styles.pageItemButtonActive : styles.pageItemButton)}
+    aria-label="Next"
+    onClick={onClick}
+  >
+    {!hideTick && (<span aria-hidden="true">&laquo;</span>)}
+    <span>{text}</span>
   </button>
 );
 
-const PaginationNavLink = params => (
-  <NavLink to={`/page/${params.page}`}>
-    <span>{params.text}</span>
+const PaginationNavLink = ({ page, text }: IPaginationButton) => (
+  <NavLink to={`/page/${page}`}>
+    <span>{text}</span>
   </NavLink>
 );
 
@@ -178,8 +191,8 @@ const Pagination = ({
                 }
 
                 return (
-                  <li key={index} className={state.currentPage === page ? `${css(styles.pageItemActive)}` : `${css(styles.pageItem)}`}>
-                    {typeMap[linkType]({ page, text: page, onClick: handleClick(page), hideTick: true })}
+                  <li key={index} className={css(styles.pageItem)}>
+                    {typeMap[linkType]({ page, text: page, onClick: handleClick(page), hideTick: true, isActive: state.currentPage === page })}
                   </li>
                 );
               })}

@@ -5,6 +5,6 @@ declare const _default: {
     pagination: object;
     pageItem: object;
     pageItemButton: object;
-    pageItemActive: object;
+    pageItemButtonActive: object;
 };
 export default _default;
