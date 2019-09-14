@@ -178,7 +178,7 @@ const Pagination = ({
                 }
 
                 return (
-                  <li key={index} className={state.currentPage === page ? `${css(styles.pageItemActive)}` : `${css(styles.pageItem)}}`}>
+                  <li key={index} className={state.currentPage === page ? `${css(styles.pageItemActive)}` : `${css(styles.pageItem)}`}>
                     {typeMap[linkType]({ page, text: page, onClick: handleClick(page), hideTick: true })}
                   </li>
                 );

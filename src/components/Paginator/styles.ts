@@ -10,15 +10,16 @@ export default StyleSheet.create({
   },
   pageLimiter: {
     display: 'flex',
-    width: '65px',
-    height: '40px',
+    width: '60px',
+    height: '30px',
     backgroundColor: '#fff',
-    borderRadius: '6px',
-    boxShadow: '0 0 5px rgba(0, 0, 0, 0.1)',
+    borderRadius: '3px',
+    border: '1px solid #CCC'
   },
   navPagination: {
     display: 'flex',
-    flexBasis: '100%;',
+    flexBasis: '100%',
+    marginLeft: 4
   },
   pagination: {
     backgroundColor: '#FFF',
@@ -48,6 +49,11 @@ export default StyleSheet.create({
     }
   },
   pageItemActive: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignContent: 'center',
+    width: 40,
+    height: 25,
     backgroundColor: '#29434e',
     color: '#FFF',
   }
