@@ -4,12 +4,6 @@ import { Color } from 'devart-utils/dist/models/general';
 export default StyleSheet.create({
   search: {
     position: 'relative',
-    borderRadius: 5,
-    backgroundColor: Color.WHITE,
-    '&:hover': {
-      backgroundColor: Color.LIGHT_GRAY
-    },
-    marginLeft: 0,
     width: '100%',
   },
   searchIcon: {
@@ -19,7 +13,9 @@ export default StyleSheet.create({
     pointerEvents: 'none',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    marginLeft: 5,
+    fill: Color.PRIMARY
   },
   icon: {
     background: '../../assets/icons/search.svg'
@@ -29,8 +25,11 @@ export default StyleSheet.create({
     paddingTop: 3,
     paddingRight: 3,
     paddingBottom: 3,
-    paddingLeft: 3 * 10,
+    paddingLeft: 33,
     width: '100%',
+    borderRadius: 3,
+    border: '1px solid #eee',
+    fontSize: 14
     // transition: theme.transitions.create('width'),
   }
 });

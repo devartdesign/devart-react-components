@@ -5,12 +5,6 @@ var general_1 = require("devart-utils/dist/models/general");
 exports.default = no_important_1.StyleSheet.create({
     search: {
         position: 'relative',
-        borderRadius: 5,
-        backgroundColor: general_1.Color.WHITE,
-        '&:hover': {
-            backgroundColor: general_1.Color.LIGHT_GRAY
-        },
-        marginLeft: 0,
         width: '100%',
     },
     searchIcon: {
@@ -20,7 +14,9 @@ exports.default = no_important_1.StyleSheet.create({
         pointerEvents: 'none',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginLeft: 5,
+        fill: general_1.Color.PRIMARY
     },
     icon: {
         background: '../../assets/icons/search.svg'
@@ -30,8 +26,12 @@ exports.default = no_important_1.StyleSheet.create({
         paddingTop: 3,
         paddingRight: 3,
         paddingBottom: 3,
-        paddingLeft: 3 * 10,
+        paddingLeft: 33,
         width: '100%',
+        borderRadius: 3,
+        border: '1px solid #eee',
+        fontSize: 14
+        // transition: theme.transitions.create('width'),
     }
 });
 //# sourceMappingURL=styles.js.map
