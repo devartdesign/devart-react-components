@@ -131,7 +131,7 @@ var Pagination = function (_a) {
                     if (page === RIGHT_PAGE) {
                         return (react_1.default.createElement("li", { key: index, className: no_important_1.css(styles_1.default.pageItem) }, typeMap[linkType]({ text: 'Prev', onClick: handleMoveRight, page: page })));
                     }
-                    return (react_1.default.createElement("li", { key: index, className: state.currentPage === page ? "" + no_important_1.css(styles_1.default.pageItemActive) : no_important_1.css(styles_1.default.pageItem) + "}" }, typeMap[linkType]({ page: page, text: page, onClick: handleClick(page), hideTick: true })));
+                    return (react_1.default.createElement("li", { key: index, className: state.currentPage === page ? "" + no_important_1.css(styles_1.default.pageItemActive) : "" + no_important_1.css(styles_1.default.pageItem) }, typeMap[linkType]({ page: page, text: page, onClick: handleClick(page), hideTick: true })));
                 })))))));
 };
 exports.default = react_1.memo(Pagination);
