@@ -19,7 +19,6 @@ export default StyleSheet.create({
   navPagination: {
     display: 'flex',
     flexBasis: '100%',
-    marginLeft: 4
   },
   pagination: {
     backgroundColor: '#FFF',
@@ -33,7 +32,7 @@ export default StyleSheet.create({
     display: 'flex',
     justifyContent: 'center',
     alignContent: 'center',
-    width: 40,
+    width: 25,
     height: 25,
   },
   pageItemButton: {
@@ -42,7 +41,7 @@ export default StyleSheet.create({
     backgroundColor: '#FFF',
     width: '100%',
     height: '100%',
-    padding: '0',
+    padding: 0,
     ':hover': {
       backgroundColor: '#546e7a',
       color: '#FFF',
@@ -55,10 +54,6 @@ export default StyleSheet.create({
     color: '#FFF',
     width: '100%',
     height: '100%',
-    padding: '0',
-    ':hover': {
-      backgroundColor: '#fff',
-      color: '#29434e',
-    },
+    padding: 0,
   },
 });

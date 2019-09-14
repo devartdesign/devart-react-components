@@ -20,7 +20,6 @@ exports.default = no_important_1.StyleSheet.create({
     navPagination: {
         display: 'flex',
         flexBasis: '100%',
-        marginLeft: 4
     },
     pagination: {
         backgroundColor: '#FFF',
@@ -34,7 +33,7 @@ exports.default = no_important_1.StyleSheet.create({
         display: 'flex',
         justifyContent: 'center',
         alignContent: 'center',
-        width: 40,
+        width: 25,
         height: 25,
     },
     pageItemButton: {
@@ -43,7 +42,7 @@ exports.default = no_important_1.StyleSheet.create({
         backgroundColor: '#FFF',
         width: '100%',
         height: '100%',
-        padding: '0',
+        padding: 0,
         ':hover': {
             backgroundColor: '#546e7a',
             color: '#FFF',
@@ -56,11 +55,7 @@ exports.default = no_important_1.StyleSheet.create({
         color: '#FFF',
         width: '100%',
         height: '100%',
-        padding: '0',
-        ':hover': {
-            backgroundColor: '#fff',
-            color: '#29434e',
-        },
+        padding: 0,
     },
 });
 //# sourceMappingURL=styles.js.map
