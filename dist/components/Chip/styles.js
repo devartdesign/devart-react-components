@@ -22,6 +22,7 @@ exports.default = no_important_1.StyleSheet.create({
         justifyContent: 'center',
         textDecoration: 'none',
         backgroundColor: '#e0e0e0',
+        marginRight: 5
     },
     label: {
         cursor: 'inherit',
@@ -36,7 +37,8 @@ exports.default = no_important_1.StyleSheet.create({
         paddingRight: 0
     },
     icon: {
-        fill: general_1.Color.PRIMARY
+        fill: general_1.Color.PRIMARY,
+        margin: '0 10px 0 5px'
     }
 });
 //# sourceMappingURL=styles.js.map

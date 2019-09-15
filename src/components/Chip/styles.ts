@@ -21,6 +21,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
     textDecoration: 'none',
     backgroundColor: '#e0e0e0',
+    marginRight: 5
   },
   label: {
     cursor: 'inherit',
@@ -35,6 +36,7 @@ export default StyleSheet.create({
     paddingRight: 0
   },
   icon: {
-    fill: Color.PRIMARY
+    fill: Color.PRIMARY,
+    margin: '0 10px 0 5px'
   }
 });
