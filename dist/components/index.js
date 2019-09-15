@@ -14,4 +14,6 @@ var Paginator_1 = require("./Paginator");
 exports.Paginator = Paginator_1.default;
 var Search_1 = require("./Search");
 exports.Search = Search_1.default;
+var Chip_1 = require("./Chip");
+exports.Chip = Chip_1.default;
 //# sourceMappingURL=index.js.map

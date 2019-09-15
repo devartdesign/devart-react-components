@@ -14,9 +14,9 @@ var react_1 = __importStar(require("react"));
 var no_important_1 = require("aphrodite/no-important");
 var styles_1 = __importDefault(require("./styles"));
 var Chip = function (_a) {
-    var onClick = _a.onClick, label = _a.label, key = _a.key, icon = _a.icon;
+    var onClick = _a.onClick, label = _a.label, key = _a.key, icon = _a.icon, className = _a.className;
     var Icon = icon;
-    return (react_1.default.createElement("div", { role: "button", key: key, className: no_important_1.css(styles_1.default.container), onClick: onClick },
+    return (react_1.default.createElement("div", { role: "button", key: key, className: no_important_1.css(styles_1.default.container) + " " + className, onClick: onClick },
         react_1.default.createElement("span", { className: no_important_1.css(styles_1.default.label) }, label),
         icon && react_1.default.createElement(Icon, null)));
 };

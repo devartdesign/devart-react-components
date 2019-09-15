@@ -5,3 +5,4 @@ export { default as Toast } from './Toast';
 export { default as ErrorBoundary } from './ErrorBoundary';
 export { default as Paginator } from './Paginator';
 export { default as Search } from './Search';
+export { default as Chip } from './Chip';

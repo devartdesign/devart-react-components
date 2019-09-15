@@ -7,13 +7,14 @@ export interface IChipProps {
   label: string;
   icon: any;
   key?: string;
+  className?: string;
   onClick: () => void;
 }
 
-const Chip = ({ onClick, label, key, icon }: IChipProps) => {
+const Chip = ({ onClick, label, key, icon, className }: IChipProps) => {
   const Icon = icon;
   return (
-    <div role="button" key={key} className={css(styles.container)} onClick={onClick}>
+    <div role="button" key={key} className={`${css(styles.container)} ${className}`} onClick={onClick}>
       <span className={css(styles.label)}>{label}</span>
       {icon && <Icon />}
     </div>
