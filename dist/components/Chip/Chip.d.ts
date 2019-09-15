@@ -2,7 +2,7 @@ import React from 'react';
 export interface IChipProps {
     label: string;
     icon: any;
-    key?: string;
+    key?: string | number;
     className?: string;
     onClick: () => void;
 }
