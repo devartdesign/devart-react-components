@@ -17,8 +17,8 @@ var Chip = function (_a) {
     var onClick = _a.onClick, label = _a.label, icon = _a.icon, className = _a.className;
     var Icon = icon;
     return (react_1.default.createElement("div", { role: "button", className: no_important_1.css(styles_1.default.container) + " " + className, onClick: onClick },
-        react_1.default.createElement("span", { className: no_important_1.css(styles_1.default.label) }, label),
-        icon && react_1.default.createElement(Icon, null)));
+        react_1.default.createElement("span", { className: no_important_1.css(styles_1.default.label, icon && styles_1.default.labelWithIcon) }, label),
+        icon && react_1.default.createElement(Icon, { width: 18, height: 18, className: no_important_1.css(styles_1.default.icon) })));
 };
 exports.default = react_1.memo(Chip);
 //# sourceMappingURL=Chip.js.map

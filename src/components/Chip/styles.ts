@@ -1,4 +1,5 @@
 import { StyleSheet } from 'aphrodite/no-important';
+import { Color } from 'devart-utils/dist/models/general';
 
 export default StyleSheet.create({
   container: {
@@ -29,5 +30,11 @@ export default StyleSheet.create({
     whiteSpace: 'nowrap',
     paddingLeft: 12,
     paddingRight: 12,
+  },
+  labelWithIcon: {
+    paddingRight: 0
+  },
+  icon: {
+    fill: Color.PRIMARY
   }
 });

@@ -14,8 +14,8 @@ const Chip = ({ onClick, label, icon, className }: IChipProps) => {
   const Icon = icon;
   return (
     <div role="button" className={`${css(styles.container)} ${className}`} onClick={onClick}>
-      <span className={css(styles.label)}>{label}</span>
-      {icon && <Icon />}
+      <span className={css(styles.label, icon && styles.labelWithIcon)}>{label}</span>
+      {icon && <Icon width={18} height={18} className={css(styles.icon)} />}
     </div>
   );
 };

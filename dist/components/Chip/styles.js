@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var no_important_1 = require("aphrodite/no-important");
+var general_1 = require("devart-utils/dist/models/general");
 exports.default = no_important_1.StyleSheet.create({
     container: {
         cursor: 'pointer',
@@ -30,6 +31,12 @@ exports.default = no_important_1.StyleSheet.create({
         whiteSpace: 'nowrap',
         paddingLeft: 12,
         paddingRight: 12,
+    },
+    labelWithIcon: {
+        paddingRight: 0
+    },
+    icon: {
+        fill: general_1.Color.PRIMARY
     }
 });
 //# sourceMappingURL=styles.js.map
