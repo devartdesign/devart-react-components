@@ -51,6 +51,7 @@ export interface IPaginationState {
 }
 
 export interface IPaginationProps {
+  page: number;
   totalRecords: number;
   pageLimit: number;
   pageNeighbours: number;
@@ -60,6 +61,7 @@ export interface IPaginationProps {
 }
 
 const Pagination = ({
+  page = 1,
   pageLimit = 1,
   pageNeighbours = 0,
   totalRecords = 0,
@@ -69,7 +71,7 @@ const Pagination = ({
   children
 }: React.PropsWithChildren<IPaginationProps>) => {
   const [state, setState] = useState<IPaginationState>(() => ({
-    currentPage: 1,
+    currentPage: page,
     lastPage: 1,
     totalPages: 0,
     pageLimit: pageLimit,

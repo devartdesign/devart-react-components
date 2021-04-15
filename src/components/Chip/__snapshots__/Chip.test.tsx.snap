@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chip Component should render 1`] = `
+.container {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.87);
+  border: none;
+  height: 32px;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  font-size: 0.8125rem;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -moz-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-align-items: center;
+  align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  white-space: nowrap;
+  border-radius: 16px;
+  vertical-align: middle;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #e0e0e0;
+  margin-right: 5px;
+}
+
+.label-labelWithIcon {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  cursor: inherit;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  padding-left: 12px;
+  padding-right: 0px;
+}
+
+.icon {
+  fill: #29434e;
+  margin: 0 10px 0 5px;
+}
+
+<div
+  className="container undefined"
+  onClick={[MockFunction]}
+  role="button"
+>
+  <span
+    className="label-labelWithIcon"
+  >
+    label chip
+  </span>
+  <svg
+    className="icon"
+    height={18}
+    viewBox="0 0 24 24"
+    width={18}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+    <path
+      d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+    />
+  </svg>
+</div>
+`;

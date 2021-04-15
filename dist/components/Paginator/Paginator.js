@@ -46,15 +46,15 @@ var typeMap = (_a = {},
     _a[types_1.LinkType.BUTTON] = PaginationButtonLink,
     _a);
 var Pagination = function (_a) {
-    var _b = _a.pageLimit, pageLimit = _b === void 0 ? 1 : _b, _c = _a.pageNeighbours, pageNeighbours = _c === void 0 ? 0 : _c, _d = _a.totalRecords, totalRecords = _d === void 0 ? 0 : _d, _e = _a.hidePaginationLimiter, hidePaginationLimiter = _e === void 0 ? false : _e, _f = _a.linkType, linkType = _f === void 0 ? types_1.LinkType.BUTTON : _f, onPageChanged = _a.onPageChanged, children = _a.children;
-    var _g = react_1.useState(function () { return ({
-        currentPage: 1,
+    var _b = _a.page, page = _b === void 0 ? 1 : _b, _c = _a.pageLimit, pageLimit = _c === void 0 ? 1 : _c, _d = _a.pageNeighbours, pageNeighbours = _d === void 0 ? 0 : _d, _e = _a.totalRecords, totalRecords = _e === void 0 ? 0 : _e, _f = _a.hidePaginationLimiter, hidePaginationLimiter = _f === void 0 ? false : _f, _g = _a.linkType, linkType = _g === void 0 ? types_1.LinkType.BUTTON : _g, onPageChanged = _a.onPageChanged, children = _a.children;
+    var _h = react_1.useState(function () { return ({
+        currentPage: page,
         lastPage: 1,
         totalPages: 0,
         pageLimit: pageLimit,
         totalRecords: totalRecords,
         pageNeighbours: pageNeighbours
-    }); }), state = _g[0], setState = _g[1];
+    }); }), state = _h[0], setState = _h[1];
     var gotoPage = react_1.useCallback(function (props) {
         var currentPage = Math.max(1, Math.min(props.page, props.totalPages));
         onPageChanged({ page: currentPage, limit: props.pageLimit });

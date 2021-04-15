@@ -8,6 +8,7 @@ describe('Paginator Component', () => {
   global.console.error = () => null;
   let wrapper;
   const defaultProps: IPaginationProps = {
+    page: 1,
     totalRecords: 40,
     pageLimit: 2,
     pageNeighbours: 2,

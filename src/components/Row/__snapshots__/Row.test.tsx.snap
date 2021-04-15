@@ -11,8 +11,6 @@ exports[`Row Component should render 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -36,8 +34,6 @@ exports[`Row Component should render with extra css classes 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
