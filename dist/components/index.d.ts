@@ -3,4 +3,3 @@ export { default as Col } from './Col';
 export { default as Spinner } from './Spinner';
 export { default as Toast } from './Toast';
 export { default as ErrorBoundary } from './ErrorBoundary';
-export { default as Chip } from './Chip';

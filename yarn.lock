@@ -4529,9 +4529,9 @@ detect-port@^1.3.0:
     address "^1.0.1"
     debug "^2.6.0"
 
-"devart-utils@git+ssh://git@github.com:devartdesign/devart-utils.git":
+"devart-utils@git+https://1ea3b578cf84abccabca1969a3b09d3ad71c011dgithub:x-oauth-basic@github.com:/devartdesign/devart-utils.git":
   version "0.0.1"
-  resolved "git+ssh://git@github.com:devartdesign/devart-utils.git#93d18c8aace661fab95617685270ab1f9db0d7b9"
+  resolved "git+https://1ea3b578cf84abccabca1969a3b09d3ad71c011dgithub:x-oauth-basic@github.com:/devartdesign/devart-utils.git#4476abbfd0fbc8929cfc3aa76030126f56a45ff2"
 
 diff-sequences@^24.9.0:
   version "24.9.0"
