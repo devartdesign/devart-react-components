@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var no_important_1 = require("aphrodite/no-important");
 var utils_1 = require("devart-utils/dist/utils");
-var general_1 = require("devart-utils/dist/models/general");
+var constants_1 = require("../../constants");
 exports.default = no_important_1.StyleSheet.create({
     container: {
         overflow: 'hidden',
@@ -24,8 +24,8 @@ exports.default = no_important_1.StyleSheet.create({
         borderBottom: '1px solid rgba(0,0,0,.05)',
         lineHeight: 1.8,
         textTransform: 'capitalize',
-        color: general_1.Color.DARK_GRAY,
-        backgroundColor: utils_1.hexToRgba(general_1.Color.WHITE, 85),
+        color: constants_1.STYLE.COLOR.DARK_GRAY,
+        backgroundColor: utils_1.hexToRgba(constants_1.STYLE.COLOR.WHITE, 85),
         backgroundClip: 'padding-box'
     },
     button: {
@@ -38,19 +38,19 @@ exports.default = no_important_1.StyleSheet.create({
     body: {
         padding: 12,
         textTransform: 'capitalize',
-        color: general_1.Color.WHITE
+        color: constants_1.STYLE.COLOR.WHITE
     },
     success: {
-        backgroundColor: general_1.Color.GREEN
+        backgroundColor: constants_1.STYLE.COLOR.GREEN
     },
     warning: {
-        backgroundColor: general_1.Color.FAVORITE
+        backgroundColor: constants_1.STYLE.COLOR.FAVORITE
     },
     info: {
-        backgroundColor: general_1.Color.SECONDARY
+        backgroundColor: constants_1.STYLE.COLOR.SECONDARY
     },
     danger: {
-        backgroundColor: general_1.Color.NONARY
+        backgroundColor: constants_1.STYLE.COLOR.NONARY
     }
 });
 //# sourceMappingURL=styles.js.map

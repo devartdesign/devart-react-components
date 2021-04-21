@@ -4531,7 +4531,7 @@ detect-port@^1.3.0:
 
 "devart-utils@git+https://1ea3b578cf84abccabca1969a3b09d3ad71c011dgithub:x-oauth-basic@github.com:/devartdesign/devart-utils.git":
   version "0.0.1"
-  resolved "git+https://1ea3b578cf84abccabca1969a3b09d3ad71c011dgithub:x-oauth-basic@github.com:/devartdesign/devart-utils.git#4476abbfd0fbc8929cfc3aa76030126f56a45ff2"
+  resolved "git+https://1ea3b578cf84abccabca1969a3b09d3ad71c011dgithub:x-oauth-basic@github.com:/devartdesign/devart-utils.git#7f364da84601a55f3a1656d4bde42b8b3d45d456"
 
 diff-sequences@^24.9.0:
   version "24.9.0"

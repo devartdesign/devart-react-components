@@ -27,7 +27,7 @@ exports[`Toast should render 1`] = `
   line-height: 1.8;
   text-transform: capitalize;
   color: #646565;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(15, 15, 15, 0.85);
   background-clip: padding-box;
 }
 
@@ -44,7 +44,7 @@ exports[`Toast should render 1`] = `
 .body {
   padding: 12px;
   text-transform: capitalize;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 <div

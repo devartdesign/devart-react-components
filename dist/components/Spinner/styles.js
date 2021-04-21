@@ -1,14 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var no_important_1 = require("aphrodite/no-important");
-var spinnerAnimation = {
-    from: {
-        transform: 'rotate(0)'
-    },
-    to: {
-        transform: 'rotate(359deg)'
-    }
-};
 exports.default = no_important_1.StyleSheet.create({
     container: {
         display: 'flex',
@@ -21,7 +13,14 @@ exports.default = no_important_1.StyleSheet.create({
         verticalAlign: 'text-bottom',
         borderStyle: 'solid',
         borderRadius: '50%',
-        animationName: spinnerAnimation,
+        animationName: {
+            from: {
+                transform: 'rotate(0)'
+            },
+            to: {
+                transform: 'rotate(359deg)'
+            }
+        },
         animationDuration: '1s',
         animationIterationCount: 'infinite',
         animationTimingFunction: 'linear'
