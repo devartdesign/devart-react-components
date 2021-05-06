@@ -22,7 +22,7 @@ const Toast = ({ title, description, type, onClose }: IToastProps) => {
     <div key="Toast" className={css(styles.container, styles[type])}>
       <div className={css(styles.header)}>
         <strong>{title}</strong>
-        <button className={css(styles.button)} onClick={onClose}>
+        <button data-testid="close-toast-btn" className={css(styles.button)} onClick={onClose}>
           <small>x</small>
         </button>
       </div>

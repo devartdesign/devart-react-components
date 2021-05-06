@@ -58,6 +58,7 @@ exports[`Toast should render 1`] = `
     </strong>
     <button
       className="button"
+      data-testid="close-toast-btn"
       onClick={[MockFunction]}
     >
       <small>

@@ -25,7 +25,7 @@ var Toast = function (_a) {
     return (react_1.default.createElement("div", { key: "Toast", className: no_important_1.css(styles_1.default.container, styles_1.default[type]) },
         react_1.default.createElement("div", { className: no_important_1.css(styles_1.default.header) },
             react_1.default.createElement("strong", null, title),
-            react_1.default.createElement("button", { className: no_important_1.css(styles_1.default.button), onClick: onClose },
+            react_1.default.createElement("button", { "data-testid": "close-toast-btn", className: no_important_1.css(styles_1.default.button), onClick: onClose },
                 react_1.default.createElement("small", null, "x"))),
         react_1.default.createElement("div", { className: no_important_1.css(styles_1.default.body) }, description)));
 };
