@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var no_important_1 = require("aphrodite/no-important");
-var utils_1 = require("devart-utils/dist/utils");
 var constants_1 = require("../../constants");
 exports.default = no_important_1.StyleSheet.create({
     container: {
@@ -25,7 +24,7 @@ exports.default = no_important_1.StyleSheet.create({
         lineHeight: 1.8,
         textTransform: 'capitalize',
         color: constants_1.STYLE.COLOR.DARK_GRAY,
-        backgroundColor: utils_1.hexToRgba(constants_1.STYLE.COLOR.WHITE, 85),
+        backgroundColor: '#e9e9e9',
         backgroundClip: 'padding-box'
     },
     button: {

@@ -1,5 +1,4 @@
 import { StyleSheet } from 'aphrodite/no-important';
-import { hexToRgba } from 'devart-utils/dist/utils';
 import { STYLE } from '../../constants';
 
 export default StyleSheet.create({
@@ -24,7 +23,7 @@ export default StyleSheet.create({
     lineHeight: 1.8,
     textTransform: 'capitalize',
     color: STYLE.COLOR.DARK_GRAY,
-    backgroundColor: hexToRgba(STYLE.COLOR.WHITE, 85),
+    backgroundColor: '#e9e9e9',
     backgroundClip: 'padding-box'
   },
   button: {
